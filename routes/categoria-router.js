@@ -11,4 +11,4 @@ routes.post('/', _ctrl.post);
 routes.put('/:id', _ctrl.put);
 routes.delete('/:id', _ctrl.delete);
 
-module.exports = app => app.use('/categoria', routes);
+module.exports = app => app.use('/categorias', routes);

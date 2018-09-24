@@ -5,7 +5,7 @@ const schema = mongoose.Schema;
 
 const categoriaModel = new schema(
   {
-    tirulo: { trim: true, index: true, required: true, typr: String },
+    titulo: { trim: true, index: true, required: true, type: String },
     descricao: { type: String },
     foto: { type: String, required: true },
     ativa: { type: Boolean, required: true },
