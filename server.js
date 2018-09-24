@@ -1,6 +1,6 @@
 'use strict'
 
-const app = require("./bin/config");
+const app = require("./bin/express");
 const variables = require("./bin/variables");
 
 require('./routes/index')(app);
