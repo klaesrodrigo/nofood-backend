@@ -1,27 +1,27 @@
 'use strick'
 
-function produtoController(){
+class ProdutoController{
 
+    constructor(){}
+
+    async get(req, res) {
+        res.status(200).send('Funcionando..');
+    }
+
+    async getById(req, res){
+        res.status(200).send(`O id passado foi ${req.params.id}`);
+    }
+
+    async post(req, res) {
+        
+    }
+
+    async put(req, res) {
+
+    }
+
+    async delete(req, res) {
+
+    }
 }
-
-produtoController.prototype.get = async (req, res) => {
-    res.status(200).send('Funcionando..');
-}
-
-produtoController.prototype.getById = async (req, res) => {
-    res.status(200).send(`O id passado foi ${req.params.id}`);
-}
-
-produtoController.prototype.post = async (req, res) => {
-    
-}
-
-produtoController.prototype.put = async (req, res) => {
-
-}
-
-produtoController.prototype.delete = async (req, res) => {
-
-}
-
-module.exports = produtoController;
+module.exports = ProdutoController;
