@@ -1,13 +1,13 @@
 'use strict'
 
-require('../models/categoria-model');
+require('../models/produtos-model');
 
 const base = require('../bin/base/repository-base');
 
 
-class CategoriaRepository {
+class ProdutoRepository {
   constructor() {
-    this._base = new base('Categoria')
+    this._base = new base('Produto')
   }
 
   async create(data) {
@@ -31,4 +31,4 @@ class CategoriaRepository {
   }
 }
 
-module.exports = CategoriaRepository;
+module.exports = ProdutoRepository;
